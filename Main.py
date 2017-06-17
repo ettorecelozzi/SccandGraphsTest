@@ -1,7 +1,7 @@
 import Graph
 import DFS
 
-vals = Graph.createGraph(7, 16)
+vals = Graph.createGraph(7, 1)
 print vals[0]
 matrix = vals[0]
 nodeList = vals[1]

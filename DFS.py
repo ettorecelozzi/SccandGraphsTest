@@ -42,7 +42,7 @@ def strongly_connected(nodes):
             scc.append(u)
 
         # siccome devo salvare il valore ad ogni ricorsione sono costretto a creare un contenitore
-        # che salva ogni volta il vlaore nella lista
+        # che salva ogni volta il valore nella lista
         Scc(node)
         return scc
 
@@ -51,7 +51,7 @@ def strongly_connected(nodes):
         global nodeAndTimes
         reversenode = []
         for endtime, node in reversed(sorted(nodeAndTimes.iteritems())):
-            reversenode.append(node)  # inserisco in testa per invertire l' ordine
+            reversenode.append(node)  # lista contenente i nodi da seguire in ordine decrescente
         for node in nodelist:
             node.setColor("white")
         for node in reversenode:

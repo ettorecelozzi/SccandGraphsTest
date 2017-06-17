@@ -1,3 +1,4 @@
+# coding=utf-8
 import Node
 import AdjacencyMatrix
 import numpy as np
@@ -17,6 +18,10 @@ def createGraph(vertices, edges):  # nota edges <= vertices^2
     return returnList
 
 
+# è necessaria la lista dei nodi perchè voglio fare il grafico trasposto. Mi serve che la DFS trasposed
+# operi sui nodi del grafico di partenza, quindi non devo cambiare gli indirizzi in memoria. I nodi di partenza
+# e quelli del grafo trasposto devono essere collegati per far si che la mia DFS transposed percorra gli stessi
+# cammini, pertanto elimino i figli del grafo di partenza per sostituirli con quelli del grafo trasposto
 def transpose(nodelist, matrix):
     for i in range(0, len(nodelist) - 1):
         nodelist[i].setSon()
