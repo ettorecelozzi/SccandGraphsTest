@@ -11,8 +11,7 @@ transposedMatrix = transposedVals[0]
 transposedNodeList = transposedVals[1]
 scclist = DFS.strongly_connected(transposedNodeList)
 print scclist
+print ""
 numnodi = input("Inserisci numero massimo nodi:")
 Test.test(numnodi)
-
-
-
+Test.grafici()
