@@ -37,7 +37,7 @@ def grafici():
     list20 = riempigrafi(20)
     list50 = riempigrafi(50)
     xAxis = []
-    for i in range(0, len(list2)):
+    for i in range(0, len(list2)):  # contando il numero di tempi registrati ottengo il numero di archi
         xAxis.append(i)
     plt.plot(xAxis, list2)
 

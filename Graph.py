@@ -9,7 +9,6 @@ def createGraph(vertices, edges):  # nota edges <= vertices^2
     for i in range(0, vertices):
         nodeList.append(Node.Node())
     adjMatrix = AdjacencyMatrix.createMatrix(vertices, edges)
-    # adjMatrix=np.array([[0,1,0],[0,0,1],[1,0,0]])
     for i in range(0, vertices):
         for j in range(0, vertices):
             if adjMatrix[i][j] == 1:

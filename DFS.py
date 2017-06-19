@@ -39,7 +39,7 @@ def strongly_connected(nodes):
                     node.setParent(u)
                     Scc(node)
             u.setColor("black")
-            scc.append(u)
+            scc.append(u)  # lista dichiarata nel wrap
 
         # siccome devo salvare il valore ad ogni ricorsione sono costretto a creare un contenitore
         # che salva ogni volta il valore nella lista
